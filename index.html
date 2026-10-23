@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Путь проекта — демо</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+<header class="top">
+  <div class="brand">Путь проекта <span>демо</span></div>
+  <label class="top__sel">Проект
+    <select id="proj" aria-label="Демо-проект"></select>
+  </label>
+  <span class="grow"></span>
+  <button class="btn btn--sm" data-act="settings">
+    <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21v-7"></path><path d="M4 10V3"></path><path d="M12 21v-9"></path><path d="M12 8V3"></path><path d="M20 21v-5"></path><path d="M20 12V3"></path><path d="M2 14h4"></path><path d="M10 8h4"></path><path d="M18 16h4"></path></svg>Настроить этапы</button>
+  <button class="btn btn--sm btn--ghost" data-act="reset">Сбросить демо</button>
+</header>
+
+<main class="wrap">
+  <section class="card" id="head"></section>
+
+  <section class="card">
+    <div class="card__head">
+      <span class="ico ico--acc"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="19" r="3"></circle><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"></path><circle cx="18" cy="5" r="3"></circle></svg></span>
+      <div class="grow"><h2 class="h-card">Путь проекта</h2><p class="t-small" id="pathSub"></p></div>
+    </div>
+    <div class="card__body">
+      <div id="banner"></div>
+      <div id="turn"></div>
+      <div class="path-box"><div class="path" id="path"></div></div>
+    </div>
+  </section>
+
+  <div class="cols">
+    <section class="card" id="detail"></section>
+    <aside class="card" id="feed"></aside>
+  </div>
+</main>
+
+<dialog id="settings" aria-labelledby="setTitle"></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="data.js?v=2"></script>
+<script src="rules.js?v=2"></script>
+<script src="app.js?v=3"></script>
+</body>
+</html>
