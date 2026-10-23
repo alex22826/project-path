@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 <header class="top">
@@ -31,22 +31,22 @@
     </div>
     <div class="card__body">
       <div id="banner"></div>
-      <div id="turn"></div>
       <div class="path-box"><div class="path" id="path"></div></div>
     </div>
   </section>
 
   <div class="cols">
-    <section class="card" id="detail"></section>
+    <section class="card" id="next"></section>
     <aside class="card" id="feed"></aside>
   </div>
 </main>
 
+<dialog id="stage" class="dlg--stage" aria-labelledby="stTitle"></dialog>
 <dialog id="settings" aria-labelledby="setTitle"></dialog>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-<script src="data.js?v=2"></script>
-<script src="rules.js?v=2"></script>
-<script src="app.js?v=3"></script>
+<script src="data.js?v=4"></script>
+<script src="rules.js?v=4"></script>
+<script src="app.js?v=5"></script>
 </body>
 </html>
